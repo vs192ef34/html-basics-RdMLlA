@@ -1,10 +1,27 @@
 #header {
     background-color: pink;
+    text-align: right;
+}
+
+#promo {
+    background-color: powderblue;
+}
+
+#sec1 {
+    background-color: honeydew;
+    width: 70%;
+    float: right;
+}
+
+#sec2 {
+    background-color: oldlace;
+    width: 30%;
+    float: left;
 }
 
 #content {
     background-color: peachpuff;
-    position: relative;
+    text-align: justify;
 }
 
 #footer {
@@ -13,8 +30,4 @@
 
 #author {
     background-color: floralwhite;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    width: 150px;
 }
