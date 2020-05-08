@@ -1,63 +1,63 @@
 .bordered {
-    border: 1px dashed royalblue;
+    border: 2px solid lightseagreen;
 }
 
-.boxed {
-    padding: 50px;
-    margin: 25px;
+.demo-rel {
+    position: relative;
+    top: 10px;
+    border: 2px groove red;
 }
 
-.sized {
-    width: 200px;
-    height: 200px;
+.demo-rel2 {
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border: 1px solid greenyellow;
+    padding: 10px;
 }
 
-.wide-box {
-    width: 400px;
+.demo-abs {
+    position: absolute;
+    color: aquamarine;
+    border: 2px solid violet;
+    top: 150px;
+    left: 1px;
+    right: 1px;
+    margin: 20px;
+    padding: 30px;
 }
 
-.content-container {
-    overflow: scroll;
+.m-demo-b {
+    margin-bottom: 50px;
 }
 
-.left-column {
-    float: left;
-    width: 25%;
+.m-demo-t {
+    margin-top: 10px;
 }
 
-.right-column {
-    float: right;
-    width: 70%;
+.div-out-m {
+    margin: 5px 0px;
 }
 
-.clearfix::before {
-    content: "";
-    clear: both;
+.p-out-m {
+    margin: 10px 0px;
 }
 
-div:first-child {
-    background-color: cornflowerblue;
+body {
+    margin: 0;
 }
 
-div:last-child {
-    background-color: coral;
+#header {
+    background-color: darkred;
+    color: white;
+    padding: 1px 0px;
 }
 
-.pseudo-demo::before {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: lightcoral;
-    border: 1px solid red;
+#header h1 {
+    margin: 20px 0px 10px 0px;
+    background-color: red;
 }
 
-.pseudo-demo::after {
-    content: "";
-    display: block;
-    width: 100px;
-    height: 100px;
-    background-color: lightsalmon;
-    border: 1px solid red;
+#header p {
+    margin: 5px 0px;
 }
-
