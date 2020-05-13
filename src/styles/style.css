@@ -1,33 +1,126 @@
-#header {
-    background-color: pink;
-    text-align: right;
+/* Geometry */
+
+html {
+    height: 100%;
 }
 
-#promo {
-    background-color: powderblue;
+body {
+    padding: 0px;
+    margin: 0px auto;
+    width: 700px;
+    position: relative;
+    min-height: 100%;
 }
 
-#sec1 {
-    background-color: honeydew;
-    width: 70%;
-    float: right;
-}
-
-#sec2 {
-    background-color: oldlace;
-    width: 30%;
+#main {
     float: left;
+    width: 55%;
+    margin-left: 20%;
+}
+
+#sections {
+    float: left;
+    width: 20%;
+    margin-left: -75%;
+}
+
+#news {
+    float: right;
+    width: 25%;
 }
 
 #content {
-    background-color: peachpuff;
-    text-align: justify;
+    overflow: hidden;
+    width: 100%;
+    padding-bottom: 42px;
 }
 
-#footer {
-    background-color: aliceblue;
+#user {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px; 
 }
 
-#author {
-    background-color: floralwhite;
+h1 {
+    margin: 0px;
+    padding: 20px;
+}
+
+#meta {
+    padding: 1px 0px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+h1 {
+    padding-left: 60px;   
+}
+
+#meta p {
+    margin: 5px;
+}
+
+/* Colors */
+
+#title {
+    background: #FEE;
+    color: white;
+}
+
+#content {
+    background: #EFE;
+}
+
+#meta,
+#meta a {
+    background: #45F;
+    color: white;
+}
+
+#user {
+    background: #FFE;
+    color: white;
+}
+
+/* Fonts */
+
+body {
+    font: 10pt Tahoma, Sans-Serif;
+}
+
+h1 {
+    font-size: 180%;
+    letter-spacing: 1px;
+}
+
+#main h2 {
+    font-size: 130%;
+}
+
+#sections,
+#news {
+    font-size: 80%;
+}
+
+#sections h2,
+#news h2 {
+    font-size: 125%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#news h3 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#meta {
+    font-size: 70%;
+}
+
+#user {
+    font-size: 90%;
 }
