@@ -7,7 +7,16 @@ html {
 body {
   padding: 0px;
   margin: 0px 50px;
-  position: relative;
+  position: absolute;
+  min-height: 100%;
+  z-index: 0;
+}
+
+#body2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 #main {
@@ -134,9 +143,17 @@ html {
   background: url(../images/window-bg.png) #eee;
 }
 
+html>body #body2 {
+  background: url(../images/left-body-bg.png) 20% 0 repeat-y white;
+}
+
 body {
-  background: white;
+  background: url(../images/left-body-bg.png) 20% 0 repeat-y;
   color: black;
+}
+
+#body2 {
+  background: url(../images/right-body-bg.png) 75% 0 repeat-y;
 }
 
 #title {
@@ -152,10 +169,6 @@ h1 {
   color: #293499;
 }
 
-#sections {
-  background: url(../images/left-col-bg.png) #a6bdff right top repeat-y;
-}
-
 #main .picture {
   border-color: #45f;
 }
@@ -168,11 +181,6 @@ h1 {
 
 #sections li a:hover {
   background: #d00;
-}
-
-#news {
-  background: url(../images/right-col-bg.png) white left top repeat-y;
-  color: #293499;
 }
 
 #news h2 {
