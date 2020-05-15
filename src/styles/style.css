@@ -1,126 +1,225 @@
 /* Geometry */
 
 html {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    padding: 0px;
-    margin: 0px auto;
-    width: 700px;
-    position: relative;
-    min-height: 100%;
+  padding: 0px;
+  margin: 0px auto;
+  width: 700px;
+  position: relative;
+  min-height: 100%;
 }
 
 #main {
-    float: left;
-    width: 55%;
-    margin-left: 20%;
+  float: left;
+  width: 55%;
+  margin-left: 20%;
+}
+
+#main h2,
+#main p {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#main h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#main .picture {
+  float: left;
+  padding: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0px 15px 15px 0px;
 }
 
 #sections {
-    float: left;
-    width: 20%;
-    margin-left: -75%;
+  float: left;
+  width: 20%;
+  margin-left: -75%;
+}
+
+#sections h2 {
+  display: none;
+}
+
+#sections ul {
+  list-style: none;
+  margin: 50px 0px;
+  padding: 0px;
+}
+
+#sections li a {
+  display: block;
+  margin: 5px 0px;
+  padding: 2px 5px;
+  border-style: solid;
+  border-width: 1px 0px;
+  text-decoration: none;
 }
 
 #news {
-    float: right;
-    width: 25%;
+  float: right;
+  width: 25%;
+}
+
+#news h2 {
+  margin: 0px 0px 20px 0px;
+  padding: 10px;
+}
+
+#news h3 {
+  float: left;
+  margin: 0px 5px;
+}
+
+#news p {
+  margin: 20px 5px;
+}
+
+#news a {
+  padding-right: 13px;
 }
 
 #content {
-    overflow: hidden;
-    width: 100%;
-    padding-bottom: 42px;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 42px;
 }
 
 #user {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 20px; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+#user p {
+  margin: 0px;
+  white-space: nowrap;
 }
 
 h1 {
-    margin: 0px;
-    padding: 20px;
+  margin: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 60px;
 }
 
 #meta {
-    padding: 1px 0px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 40px;
+  padding: 1px 0px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }
 
 h1 {
-    padding-left: 60px;   
+  padding-left: 60px;
 }
 
 #meta p {
-    margin: 5px;
+  margin: 5px;
 }
 
 /* Colors */
 
 #title {
-    background: #FEE;
-    color: white;
+  background: url(../images/title-bg.png) #45f left top repeat-x;
+  color: white;
 }
 
-#content {
-    background: #EFE;
+h1 {
+  background: url(../images/logo.png) left top no-repeat;
+}
+
+#main h2 {
+  color: #293499;
+}
+
+#main .picture {
+  border-color: #45f;
+}
+
+#sections li a {
+  background: #293499;
+  color: white;
+  border-color: white;
+}
+
+#sections li a:hover {
+  background: #d00;
+}
+
+#news h2 {
+  background: url(../images/news-head-bg.png) #dde6ff left top repeat-x;
+}
+
+#news a {
+  color: #d00;
+  background: url(../images/red-arrow.png) right center no-repeat;
 }
 
 #meta,
 #meta a {
-    background: #45F;
-    color: white;
+  background: #45f;
+  color: white;
 }
 
 #user {
-    background: #FFE;
-    color: white;
+  color: white;
+}
+
+body {
+  background: url(../images/content-bg.png) white left top repeat-y;
+  color: black;
+}
+
+html {
+  background: url(../images/window-bg.png) #eee;
 }
 
 /* Fonts */
 
 body {
-    font: 10pt Tahoma, Sans-Serif;
+  font: 10pt Tahoma, Sans-Serif;
 }
 
 h1 {
-    font-size: 180%;
-    letter-spacing: 1px;
+  font-size: 180%;
+  letter-spacing: 1px;
 }
 
 #main h2 {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 #sections,
 #news {
-    font-size: 80%;
+  font-size: 80%;
 }
 
 #sections h2,
 #news h2 {
-    font-size: 125%;
-    font-weight: bold;
-    text-transform: uppercase;
+  font-size: 125%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 #news h3 {
-    font-size: 100%;
-    font-weight: bold;
+  font-size: 100%;
+  font-weight: bold;
 }
 
 #meta {
-    font-size: 70%;
+  font-size: 70%;
 }
 
 #user {
-    font-size: 90%;
+  font-size: 90%;
 }
