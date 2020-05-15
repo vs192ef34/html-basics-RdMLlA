@@ -6,10 +6,8 @@ html {
 
 body {
   padding: 0px;
-  margin: 0px auto;
-  width: 700px;
+  margin: 0px 50px;
   position: relative;
-  min-height: 100%;
 }
 
 #main {
@@ -41,6 +39,10 @@ body {
   float: left;
   width: 20%;
   margin-left: -75%;
+  padding-bottom: 32767px;
+  margin-bottom: -32767px;
+  padding-right: 1px;
+  margin-right: -1px;
 }
 
 #sections h2 {
@@ -65,6 +67,10 @@ body {
 #news {
   float: right;
   width: 25%;
+  padding-bottom: 32767px;
+  margin-bottom: -32767px;
+  padding-left: 1px;
+  margin-left: -1px;
 }
 
 #news h2 {
@@ -88,7 +94,6 @@ body {
 #content {
   overflow: hidden;
   width: 100%;
-  padding-bottom: 42px;
 }
 
 #user {
@@ -113,10 +118,6 @@ h1 {
 
 #meta {
   padding: 1px 0px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 40px;
 }
 
 h1 {
@@ -128,6 +129,15 @@ h1 {
 }
 
 /* Colors */
+
+html {
+  background: url(../images/window-bg.png) #eee;
+}
+
+body {
+  background: white;
+  color: black;
+}
 
 #title {
   background: url(../images/title-bg.png) #45f left top repeat-x;
@@ -142,6 +152,10 @@ h1 {
   color: #293499;
 }
 
+#sections {
+  background: url(../images/left-col-bg.png) #a6bdff right top repeat-y;
+}
+
 #main .picture {
   border-color: #45f;
 }
@@ -154,6 +168,11 @@ h1 {
 
 #sections li a:hover {
   background: #d00;
+}
+
+#news {
+  background: url(../images/right-col-bg.png) white left top repeat-y;
+  color: #293499;
 }
 
 #news h2 {
@@ -173,15 +192,6 @@ h1 {
 
 #user {
   color: white;
-}
-
-body {
-  background: url(../images/content-bg.png) white left top repeat-y;
-  color: black;
-}
-
-html {
-  background: url(../images/window-bg.png) #eee;
 }
 
 /* Fonts */
