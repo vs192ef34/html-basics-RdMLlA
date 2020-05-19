@@ -96,13 +96,21 @@ margin: 0px 15px 15px 0px;
     position: absolute;
     top: 0;
     right: 0;
-    margin: 20px; 
+    margin: 27px; 
 }
 
 #user p {
     margin: 0px;
     white-space: nowrap;
+    text-align: right;
 }
+
+#user a {
+color: white;
+}
+#user a:hover {
+    color: #d00;
+    }
 
 h1 {
     margin: 0px;
@@ -135,22 +143,32 @@ h1 {
     color: white;
 }
 
+#title a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+position: absolute;
+top: 0px;
+}
+
 h1 {
     background: url(../images/logo.png) left top no-repeat;
 }
 
 #main h2 {
-    color: #293499;
+    color: #353538;
 }
 
 #main .picture {
-    border-color: #45f;
+    border-color: rgb(54, 55, 61);
 }
 
 #sections li a {
-    background: #293499;
-    color: white;
-    border-color: white;
+    background: #3d71c056;
+    color: rgb(7, 7, 7);
+    border-color: rgb(255, 255, 255);
 }
 
 #sections li a:hover {
@@ -169,7 +187,8 @@ h1 {
 #meta,
 #meta a {
     background: #45F;
-    color: white;
+    color: rgb(238, 238, 238);
+    text-align: center;
 }
 
 #user {
