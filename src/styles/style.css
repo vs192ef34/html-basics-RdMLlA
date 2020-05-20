@@ -103,6 +103,7 @@ body {
 #content {
   overflow: hidden;
   width: 100%;
+  padding-bottom: 42px;
 }
 
 #user {
@@ -127,10 +128,10 @@ h1 {
 
 #meta {
   padding: 1px 0px;
-}
-
-h1 {
-  padding-left: 60px;
+  position: absolute;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
 }
 
 #meta p {
@@ -143,12 +144,8 @@ html {
   background: url(../images/window-bg.png) #eee;
 }
 
-html>body #body2 {
-  background: url(../images/left-body-bg.png) 20% 0 repeat-y white;
-}
-
 body {
-  background: url(../images/left-body-bg.png) 20% 0 repeat-y;
+  background: url(../images/left-body-bg.png) white 20% 0 repeat-y;
   color: black;
 }
 
@@ -183,12 +180,15 @@ h1 {
   background: #d00;
 }
 
+#news {
+  color: #293499;
+}
+
 #news h2 {
   background: url(../images/news-head-bg.png) #dde6ff left top repeat-x;
 }
 
 #news a {
-  color: #d00;
   background: url(../images/red-arrow.png) right center no-repeat;
 }
 
