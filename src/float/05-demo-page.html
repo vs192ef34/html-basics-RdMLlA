@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Demo page</title>
+
+    <meta charset="utf-8" />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .header,
+      .footer {
+        background-color: grey;
+        color: white;
+        padding: 15px;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        padding: 8px;
+        margin-bottom: 8px;
+        background-color: #33b5e5;
+        color: #ffffff;
+      }
+
+      .menu li:hover {
+        background-color: #0099cc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Demo page</h1>
+    </div>
+
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+        </ul>
+      </div>
+
+      <div class="column content">
+        <h1>Mollit occaecat reprehenderit elit velit.</h1>
+        <p>
+          Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua
+          fugiat amet consectetur duis ex. Nulla ut mollit excepteur consequat
+          sint anim exercitation nulla elit id eiusmod consectetur nostrud.
+          Labore commodo irure pariatur ad reprehenderit ut. Deserunt duis irure
+          non proident officia ut cillum mollit ea nisi consectetur culpa est.
+          Nisi aliqua tempor ea minim eu. Ex consequat aute est exercitation
+          quis ullamco dolore do mollit officia esse cupidatat. Velit
+          consectetur do ullamco do occaecat in culpa adipisicing ut ex minim
+          adipisicing voluptate.
+        </p>
+        <p>
+          Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua
+          fugiat amet consectetur duis ex. Nulla ut mollit excepteur consequat
+          sint anim exercitation nulla elit id eiusmod consectetur nostrud.
+          Labore commodo irure pariatur ad reprehenderit ut. Deserunt duis irure
+          non proident officia ut cillum mollit ea nisi consectetur culpa est.
+          Nisi aliqua tempor ea minim eu. Ex consequat aute est exercitation
+          quis ullamco dolore do mollit officia esse cupidatat. Velit
+          consectetur do ullamco do occaecat in culpa adipisicing ut ex minim
+          adipisicing voluptate.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Mollit occaecat reprehenderit elit velit.</p>
+    </div>
+  </body>
+</html>

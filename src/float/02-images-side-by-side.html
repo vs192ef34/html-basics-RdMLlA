@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Float Images</title>
+  <title>Images side by side</title>
 
-    <meta charset="utf-8" />
+  <meta charset="utf-8" />
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        .box {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
+    .box {
+      float: left;
+      width: 33.33%;
+      padding: 5px;
+    }
 
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
 
-        .picture {
-            width: 100%;
-        }
-    </style>
+    .picture {
+      width: 100%;
+    }
+  </style>
 </head>
 
 <html>
-
-<body>
+  <body>
     <h2>Images side by side</h2>
     <p>Float images side by side:</p>
 
     <div class="clearfix">
-        <div class="box">
-            <img src="https://picsum.photos/seed/picsum/300/200" alt="" class="picture">
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/seed/picsum/300/200" alt="" class="picture">
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/seed/picsum/300/200" alt="" class="picture">
-        </div>
+      <div class="box">
+        <img
+          src="https://picsum.photos/seed/picsum/300/200"
+          alt=""
+          class="picture"
+        />
+      </div>
+      <div class="box">
+        <img
+          src="https://picsum.photos/seed/picsum/300/200"
+          alt=""
+          class="picture"
+        />
+      </div>
+      <div class="box">
+        <img
+          src="https://picsum.photos/seed/picsum/300/200"
+          alt=""
+          class="picture"
+        />
+      </div>
     </div>
 
-    <p>Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua fugiat amet consectetur duis ex. Nulla ut mollit
-        excepteur consequat sint anim exercitation nulla elit id eiusmod consectetur nostrud. Labore commodo irure
-        pariatur ad reprehenderit ut. Deserunt duis irure non proident officia ut cillum mollit ea nisi consectetur
-        culpa est. Nisi aliqua tempor ea minim eu. Ex consequat aute est exercitation quis ullamco dolore do mollit
-        officia esse cupidatat. Velit consectetur do ullamco do occaecat in culpa adipisicing ut ex minim adipisicing
-        voluptate.</p>
-
-</body>
-
+    <p>
+      Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua fugiat
+      amet consectetur duis ex. Nulla ut mollit excepteur consequat sint anim
+      exercitation nulla elit id eiusmod consectetur nostrud. Labore commodo
+      irure pariatur ad reprehenderit ut. Deserunt duis irure non proident
+      officia ut cillum mollit ea nisi consectetur culpa est. Nisi aliqua tempor
+      ea minim eu. Ex consequat aute est exercitation quis ullamco dolore do
+      mollit officia esse cupidatat. Velit consectetur do ullamco do occaecat in
+      culpa adipisicing ut ex minim adipisicing voluptate.
+    </p>
+  </body>
 </html>
