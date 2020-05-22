@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 32px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px 4px;
+        }
+
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0px 4px;
+        }
+
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+
+        @media (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+
+        .picture {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Responsive Image Grid</h1>
+        <p>Pariatur aliquip irure ad non in cillum magna.</p>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <img src="https://picsum.photos/seed/1000/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1001/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1002/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1003/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1004/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1005/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/1006/500/400" alt="picture" class="picture">
+        </div>
+
+        <div class="column">
+            <img src="https://picsum.photos/seed/4000/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4001/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4002/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4003/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4004/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4005/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/4006/500/400" alt="picture" class="picture">
+        </div>
+
+        <div class="column">
+            <img src="https://picsum.photos/seed/2000/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2001/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2002/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2003/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2004/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2005/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/2006/500/400" alt="picture" class="picture">
+        </div>
+
+        <div class="column">
+            <img src="https://picsum.photos/seed/3000/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3001/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3002/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3003/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3004/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3005/500/400" alt="picture" class="picture">
+            <img src="https://picsum.photos/seed/3006/500/400" alt="picture" class="picture">
+        </div>
+    </div>
+</body>
+
+</html>
