@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Basic Document</title>
+
+    <meta charset="utf-8" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 50%;
+            padding: 50px;
+            height: 450px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .color1 {
+            background-color: #bbb;
+        }
+
+        .color2 {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<html>
+
+<body>
+    <h2>Equal Height Boxes</h2>
+    <p>Floating boxes with equal height:</p>
+
+    <div class="clearfix">
+        <div class="box color1">
+            <h2>Box 1</h2>
+            <p>Culpa reprehenderit proident laboris ad ea et eu culpa proident ullamco minim commodo.</p>
+            <p>Labore Lorem elit tempor tempor magna ullamco ut qui nulla reprehenderit ex exercitation veniam. Non
+                adipisicing cillum Lorem eiusmod fugiat voluptate labore et do in consectetur ea. Occaecat voluptate
+                esse ex eu laborum anim ipsum magna nulla elit do ipsum eu.</p>
+        </div>
+        <div class="box color2">
+            <h2>Box 2</h2>
+            <p>Mollit occaecat reprehenderit elit velit.</p>
+            <p>Eu officia voluptate et dolor quis non minim nulla. Voluptate esse do amet velit enim consectetur duis
+                tempor non nisi dolor id ipsum. Fugiat consequat qui et do irure duis. Labore Lorem sint laborum veniam.
+                Qui est irure elit adipisicing voluptate consequat ex consequat ipsum excepteur culpa est ex.</p>
+            <p>Consequat ullamco velit dolore adipisicing reprehenderit pariatur quis id dolore commodo laborum eiusmod.
+                Ipsum irure fugiat proident veniam et et ipsum. Qui occaecat sint irure excepteur. Nisi officia et non
+                proident.</p>
+            <p>Commodo occaecat laborum enim Lorem ut elit Lorem exercitation reprehenderit laborum non commodo. Ipsum
+                dolor cupidatat proident commodo cupidatat occaecat fugiat proident dolor excepteur. Dolor adipisicing
+                velit in fugiat incididunt. Dolore anim reprehenderit magna nulla ipsum pariatur ad magna laboris
+                ullamco.</p>
+        </div>
+    </div>
+
+    <p>Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua fugiat amet consectetur duis ex. Nulla ut mollit
+        excepteur consequat sint anim exercitation nulla elit id eiusmod consectetur nostrud. Labore commodo irure
+        pariatur ad reprehenderit ut. Deserunt duis irure non proident officia ut cillum mollit ea nisi consectetur
+        culpa est. Nisi aliqua tempor ea minim eu. Ex consequat aute est exercitation quis ullamco dolore do mollit
+        officia esse cupidatat. Velit consectetur do ullamco do occaecat in culpa adipisicing ut ex minim adipisicing
+        voluptate.</p>
+
+</body>
+
+</html> 
