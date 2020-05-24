@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Basic Document</title>
+
+    <meta charset="utf-8" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box {
+            float: left;
+            width: 33.33%;
+            padding: 50px;
+            height: 400px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .color1 {
+            background-color: #bbb;
+        }
+
+        .color2 {
+            background-color: #ccc;
+        }
+
+        .color3 {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+
+<html>
+
+<body>
+    <h2>Grid of boxes</h2>
+    <p>Float boxes side by side:</p>
+
+    <div class="clearfix">
+        <div class="box color1">
+            <h1>Box1</h1>
+            <p>Culpa reprehenderit proident laboris ad ea et eu culpa proident ullamco minim commodo.</p>
+        </div>
+        <div class="box color2">
+            <p>Mollit occaecat reprehenderit elit velit.</p>
+        </div>
+        <div class="box color3">
+            <p>Tempor anim ad sint in nulla exercitation voluptate esse cupidatat ex Lorem.</p>
+        </div>
+    </div>
+
+    <p>Aliqua excepteur est duis excepteur incididunt anim ipsum aliqua fugiat amet consectetur duis ex. Nulla ut mollit
+        excepteur consequat sint anim exercitation nulla elit id eiusmod consectetur nostrud. Labore commodo irure
+        pariatur ad reprehenderit ut. Deserunt duis irure non proident officia ut cillum mollit ea nisi consectetur
+        culpa est. Nisi aliqua tempor ea minim eu. Ex consequat aute est exercitation quis ullamco dolore do mollit
+        officia esse cupidatat. Velit consectetur do ullamco do occaecat in culpa adipisicing ut ex minim adipisicing
+        voluptate.</p>
+
+</body>
+
+</html
