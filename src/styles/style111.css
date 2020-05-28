@@ -59,6 +59,14 @@ width: 23em;
     margin-left: 0.75em;
 }
 
+#user p a {
+    position: absolute;
+    right: 9px;
+    bottom: 6px;
+}
+
+
+
 #news {
     position: absolute;
     right: 0;
