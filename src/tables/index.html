@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table#t01 {
+            width: 100%;
+            border-spacing: 5px;
+            margin-bottom: 20px;
+        }
+
+        table#t01,
+        #t01 th,
+        #t01 td {
+            border: 1px solid black;
+            border-collapse: separate;
+        }
+
+        #t01 th,
+        #t01 td {
+            padding: 10px;
+        }
+
+        #t01 th {
+            text-align: left;
+        }
+
+        table#t02 {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #t02 table {
+            width: 100%;
+        }
+
+        table#t02,
+        #t02 th,
+        #t02 td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        #t02 th,
+        #t02 td {
+            padding: 10px;
+        }
+
+        #t02 th {
+            text-align: left;
+        }
+
+        table#t02 tr:nth-child(even) {
+            background-color: #fff;
+        }
+
+        table#t02 tr:nth-child(odd) {
+            background-color: #eee;
+        }
+
+        table#t02 th {
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, exercitationem at.</h3>
+
+    <table id="t01">
+        <tr>
+            <th colspan="3">Person Full Name</th>
+            <th>Birthdate</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Ivanov</td>
+            <td>Petr</td>
+            <td>Sergeeevich</td>
+            <td>10.10.1890</td>
+            <td>+27384723423</td>
+            <td rowspan="2">Gadiyukino, selo Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro possimus
+                quas sit ab vel vero necessitatibus consequatur perspiciatis sapiente, exercitationem fuga assumenda?
+                Blanditiis voluptas vitae sit earum. Beatae, aut! Amet, dolorem vitae? Laborum consequatur deserunt
+                reprehenderit, voluptate ratione, aperiam assumenda nostrum qui maiores natus facere unde excepturi.
+                Unde, ducimus ad? </td>
+        </tr>
+        <tr>
+            <td>Sidorov</td>
+            <td>Ivan</td>
+            <td>Patrovich</td>
+            <td>10.10.1891</td>
+            <td>+27384743423</td>
+        </tr>
+    </table>
+
+    <table id="t02">
+        <caption>Student List</caption>
+        <tr>
+            <th colspan="3">Person Full Name</th>
+            <th>Birthdate</th>
+            <th>Phone</th>
+            <th>Address</th>
+        </tr>
+        <tr>
+            <td>Ivanov</td>
+            <td>Petr</td>
+            <td>Sergeeevich</td>
+            <td>10.10.1890</td>
+            <td>+27384723423</td>
+            <td>Gadiyukino, selo</td>
+        </tr>
+        <tr>
+            <td>Sidorov</td>
+            <td>Ivan</td>
+            <td>Patrovich</td>
+            <td>10.10.1891</td>
+            <td>+27384743423</td>
+            <td>
+                <table>
+                    <caption>Lorem, ipsum.</caption>
+                    <tr>
+                        <td>Lorem, ipsum dolor.</td>
+                        <td>Vitae, minus veritatis?</td>
+                    </tr>
+                    <tr>
+                        <td>Natus, adipisci omnis.</td>
+                        <td>Rem, mollitia nostrum?</td>
+                    </tr>
+                    <tr>
+                        <td>Est, facilis voluptatem.</td>
+                        <td>Soluta, modi adipisci!</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>Ivanov</td>
+            <td>Petr</td>
+            <td>Sergeeevich</td>
+            <td>
+                <div>
+                    <ol>
+                        <li>Lorem, ipsum dolor.</li>
+                        <li>Esse, perspiciatis ad.</li>
+                        <li>Unde, veritatis cupiditate.</li>
+                    </ol>
+                </div>
+            </td>
+            <td>+27384723423</td>
+            <td>Gadiyukino, selo</td>
+        </tr>
+        <tr>
+            <td>Sidorov</td>
+            <td>Ivan</td>
+            <td>Patrovich</td>
+            <td>10.10.1891</td>
+            <td>
+                <img src="https://picsum.photos/200" alt="Random Image">
+            </td>
+            <td>Gadiyukino, selo</td>
+        </tr>
+    </table>
+
+    <table>
+        <caption>Demo table</caption>
+        <thead>
+            <tr>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+            </tr>
+            <tr>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+            </tr>
+            <tr>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+                <th>Lorem, ipsum.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Lorem, ipsum dolor.</th>
+                <th>Perspiciatis, consequuntur omnis!</th>
+                <th>Quas, omnis. Provident!</th>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Lorem, ipsum dolor.</th>
+                <th>Perspiciatis, consequuntur omnis!</th>
+                <th>Quas, omnis. Provident!</th>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th>Lorem, ipsum dolor.</th>
+                <th>Perspiciatis, consequuntur omnis!</th>
+                <th>Quas, omnis. Provident!</th>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+                <td>Lorem, ipsum.</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, perspiciatis similique. Deleniti laboriosam ipsam
+        provident ipsum! Quas dignissimos mollitia inventore!</p>
+</body>
+
+</html>
