@@ -11,20 +11,77 @@
     <h2>Form demo</h2>
 
     <form method="POST">
-        <label for="f1-1">First Name:</label>
-        <input type="text" id="f1-1" name="f1-1" value="John">
-        <br>
-        <label for="f1-2">Last Name</label>
-        <input type="text" id="f1-2" name="f1-2" value="Doe">
-        <br>
-        <input type="radio" name="gender" id="gender-male" value="male">
-        <label for="gender-male">Male</label>
-        <br>
-        <input type="radio" name="gender" id="gender-female" value="female">
-        <label for="gender-female">Female</label>
-        <br>
-        <input type="radio" name="gender" id="gender-other" value="other">
-        <label for="gender-other">Other</label>
+        <fieldset style="border: 1px dashed red; padding: 15px;">
+            <legend style="border: 1px solid blue; padding-left: 50px; padding-right: 50px;">
+                <img src="https://picsum.photos/20">
+                Personal Data
+            </legend>
+            <label for="f1-1">First Name:</label>
+            <input type="text" id="f1-1" name="f1-1" value="John">
+            <br>
+            <label for="f1-2">Last Name</label>
+            <input type="text" id="f1-2" name="f1-2" value="Doe">
+            <br>
+            <input type="radio" name="gender" id="gender-male" value="male">
+            <label for="gender-male">Male</label>
+            <br>
+            <input type="radio" name="gender" id="gender-female" value="female">
+            <label for="gender-female">Female</label>
+            <br>
+            <input type="radio" name="gender" id="gender-other" value="other">
+            <label for="gender-other">Other</label>
+            <br>
+            <input type="checkbox" name="drv-lic-type-a" id="drv-lic-type-a">
+            <label for="drv-lic-type-a">Category A</label>
+            <br>
+            <input type="checkbox" name="drv-lic-type-b" id="drv-lic-type-b">
+            <label for="drv-lic-type-b">Category B</label>
+            <br>
+            <input type="checkbox" name="drv-lic-type-c" id="drv-lic-type-c">
+            <label for="drv-lic-type-c">Category C</label>
+            <br>
+            <input type="color" name="i1" id="i1">
+            <br>
+            <input type="date" name="i2" id="i2">
+            <br>
+            <input type="datetime-local" name="i3" id="i3">
+            <br>
+            <input type="email" name="i4" id="i4">
+            <br>
+            <input type="month" name="i5" id="i5">
+            <br>
+            <input type="password" name="i6" id="i6">
+            <br>
+            <input type="number" name="i7" id="i7" required>
+            <br>
+            <input type="reset" value="Reset">
+        </fieldset>
+        <fieldset>
+            <legend>Personal Car</legend>
+            <select name="Cars" id="cars" size="7" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="audi">Audi</option>
+                <option value="saab" selected>Saab</option>
+                <option value="ms-benz">Mercedes-Benz</option>
+            </select>
+            <br>
+            <textarea name="bio" id="bio-area" cols="90" rows="10">
+    Lorem,        ipsum dolor 
+    sit amet consectetur 
+    adipisicing elit. Nobis 
+    similique assumenda consequuntur? Enim numquam placeat eum. Quod quia suscipit, quasi distinctio dolore facere fugit rem. Ea, quisquam neque. Rem repudiandae corrupti consequuntur. Quam animi recusandae est dicta sequi voluptatem necessitatibus!
+            </textarea>
+        </fieldset>
+        <fieldset>
+            <input list="browsers">
+            <datalist id="browsers">
+                <option value="Safari"></option>
+                <option value="Firefox"></option>
+                <option value="Chrome"></option>
+                <option value="Vivaldi"></option>
+                <option value="Opera"></option>
+            </datalist>
+        </fieldset>
         <br>
         <input type="submit" name="SendAction" value="Create">
     </form>

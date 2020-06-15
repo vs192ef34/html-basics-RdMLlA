@@ -1,95 +1,82 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Basic Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors</title>
+  <style>
+    div.a,
+    div.b,
+    div.c {
+      width: 150px;
+      height: 150px;
 
-  <meta charset="utf-8" />
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-  <link rel="stylesheet" href="styles/style.css" />
+    .a>p,
+    .b>p,
+    .c>p {
+      font-size: 60px;
+      border: 1px dashed red;
+      width: 70%;
+      text-align: center;
+
+      margin: 0;
+    }
+
+    .outer {
+      border: 3px solid darksalmon;
+      position: relative;
+
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .a {
+      border: 3px solid blue;
+      background-color: blanchedalmond;
+    }
+
+    .b {
+      border: 3px solid green;
+      background-color: burlywood;
+    }
+
+    .c {
+      border: 3px solid crimson;
+      background-color: darkorange;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    /* .b {
+      margin-top: -40px;
+      z-index: -1;
+    } */
+  </style>
 </head>
 
-<html>
-  <body>
-    <div id="title">
-      <h1>Megacorporation</h1>
+<body>
+  <div class="outer">
+    <div class="a">
+      <p>A</p>
     </div>
-
-    <div id="content">
-      <div id="main">
-        <h2>Mega important</h2>
-        <p>
-          <img
-            class="picture"
-            src="../src/images/pic.jpg"
-            alt="Important picture"
-          />
-        </p>
-        <p>
-          Excepteur sint irure in et nulla magna deserunt deserunt aute elit
-          laboris. Nulla culpa do Lorem pariatur. Eu enim nisi exercitation
-          cillum cupidatat do nisi incididunt aliqua veniam. Qui tempor anim
-          commodo minim tempor ea deserunt eu nulla ut officia dolore.
-          Exercitation reprehenderit fugiat ad incididunt et pariatur deserunt
-          excepteur proident incididunt. Amet dolore mollit nostrud incididunt
-          incididunt laborum exercitation. Culpa amet in consequat cillum
-          consequat in.
-        </p>
-        <p>
-          Excepteur sint irure in et nulla magna deserunt deserunt aute elit
-          laboris. Nulla culpa do Lorem pariatur. Eu enim nisi exercitation
-          cillum cupidatat do nisi incididunt aliqua veniam. Qui tempor anim
-          commodo minim tempor ea deserunt eu nulla ut officia dolore.
-          Exercitation reprehenderit fugiat ad incididunt et pariatur deserunt
-          excepteur proident incididunt. Amet dolore mollit nostrud incididunt
-          incididunt laborum exercitation. Culpa amet in consequat cillum
-          consequat in.
-        </p>
-      </div>
-
-      <div id="sections">
-        <h2>Title</h2>
-        <ul>
-          <li><a href="#">Item 1</a></li>
-          <li><a href="#">Item 2</a></li>
-          <li><a href="#">Item 3</a></li>
-          <li><a href="#">Item 4</a></li>
-        </ul>
-
-        <div id="user">
-          <p>User: Uladzislau Skrashchuk</p>
-          <p><a href="#">Logout</a></p>
-        </div>
-      </div>
-
-      <div id="news">
-        <h2>News</h2>
-
-        <h3>10.04.2020</h3>
-        <p>
-          Eu consectetur est duis id aliquip velit dolor anim Lorem officia quis
-          ullamco velit. <a href="#">Details</a>
-        </p>
-        <h3>11.04.2020</h3>
-        <p>Eu consectetur est duis id aliquip velit. <a href="#">Details</a></p>
-        <h3>14.05.2020</h3>
-        <p>
-          Eu consectetur est duis id aliquip velit dolor anim Lorem.
-          <a href="#">Details</a>
-        </p>
-        <h3>15.05.2020</h3>
-        <p>Eu consectetur est duis. <a href="#">Details</a></p>
-      </div>
+    <div class="b">
+      <p>B</p>
     </div>
-
-    <div id="meta">
-      <p>
-        Elit deserunt qui est sint eu eiusmod voluptate ad occaecat mollit ad
-        incididunt exercitation.
-      </p>
-      <p>
-        Elit deserunt qui est sint eu eiusmod voluptate ad occaecat mollit ad
-        incididunt exercitation.
-      </p>
+    <div class="c">
+      <p>C</p>
     </div>
-  </body>
+  </div>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime perferendis corrupti quidem, repudiandae aut
+    impedit, porro totam incidunt beatae itaque error et? Nihil dicta recusandae at tenetur magni magnam, ea debitis
+    porro, ullam asperiores praesentium tempora reprehenderit earum laborum quam. Et laudantium error quasi repudiandae
+    officia doloribus iste voluptatum labore!</p>
+</body>
+
 </html>
