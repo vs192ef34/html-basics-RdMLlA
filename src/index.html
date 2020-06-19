@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colors</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     div.a,
     div.b,
     div.c {
@@ -54,10 +58,117 @@
       right: 0px;
     }
 
-    /* .b {
-      margin-top: -40px;
-      z-index: -1;
-    } */
+    /* selectors */
+
+    span {
+      color: darkblue;
+    }
+
+    #demo-span {
+      color: darkorange;
+    }
+
+    .c1 {
+      color: blueviolet;
+    }
+
+    .c2 {
+      color: chocolate;
+    }
+
+    .c1.c2 {
+      color: darkgray;
+    }
+
+    .c1 .c2 {
+      color: darkmagenta;
+    }
+
+    .c1>.c2 {
+      color: crimson;
+    }
+
+    div+h3 {
+      color: aqua;
+    }
+
+    div~h3 {
+      color: cadetblue;
+    }
+
+    [data-item-id$="10"] {
+      background-color: cornflowerblue;
+      color: white;
+    }
+
+    [target] {
+      background-color: cornflowerblue;
+      color: white;
+    }
+
+    a:active {
+      color: crimson;
+    }
+
+    p:first-child {
+      color: deepskyblue;
+    }
+
+    p::first-letter {
+      font-size: 30px;
+    }
+
+    p::first-line {
+      color: dimgray;
+    }
+
+    p:last-child {
+      color: azure;
+      background-color: dimgray;
+    }
+
+    p:nth-child(3) {
+      color: dodgerblue;
+      background-color: ghostwhite;
+    }
+
+    p:nth-last-child(3) {
+      color: greenyellow;
+      background-color: indigo;
+    }
+
+    li:nth-last-child(even) {
+      color: ivory;
+      background-color: lightslategrey;
+    }
+
+    li:nth-last-child(odd) {
+      color: linen;
+      background-color: lightsteelblue;
+    }
+
+    span:only-child {
+      color: crimson;
+      background-color: gainsboro;
+    }
+
+    body {
+      counter-reset: section;
+    }
+
+    h1 {
+      counter-reset: subsection;
+    }
+
+    h1::before {
+      counter-increment: section;
+      content: "Section " counter(section) ". ";
+    }
+
+    h2::before {
+      counter-increment: subsection;
+      content: counter(section) "." counter(subsection) " ";
+    }
   </style>
 </head>
 
@@ -77,6 +188,133 @@
     impedit, porro totam incidunt beatae itaque error et? Nihil dicta recusandae at tenetur magni magnam, ea debitis
     porro, ullam asperiores praesentium tempora reprehenderit earum laborum quam. Et laudantium error quasi repudiandae
     officia doloribus iste voluptatum labore!</p>
+
+  <div>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, saepe.</span>
+    <span id="demo-span">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, cum.</span>
+    <br>
+    <span class="c1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, officia?</span>
+    <span class="c1 c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, in?</span>
+    <span class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, saepe.</span>
+    <div class="c1">
+      <div>
+        <div>
+          <div>
+            <p class="c2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, beatae ullam? Asperiores
+              fugiat,
+              eaque tempore amet aliquid culpa ut blanditiis?</p>
+          </div>
+        </div>
+      </div>
+      <div class="c1">
+        <div class="c2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, placeat!</div>
+        <div class="c2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate at, ipsum iure commodi
+          corrupti ut! Placeat necessitatibus molestias minima architecto.</div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Lorem ipsum dolor sit amet.</h3>
+
+  <div>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+    <div>
+      <h3>Lorem ipsum dolor sit, amet consectetur adipisicing.</h3>
+    </div>
+  </div>
+
+  <div data-item-id="101">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae incidunt facilis quidem
+    pariatur ea ex fugit
+    distinctio eveniet consequuntur facere?</div>
+
+  <p data-item-id="1110">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae incidunt facilis quidem
+    pariatur
+    ea ex fugit
+    distinctio eveniet consequuntur facere?</p>
+
+  <a href="https://google.com">Search link</a>
+
+  <a href="https://google.com" target="_blank">Another search link</a>
+
+  <div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, minus, enim tempora nemo exercitationem
+      deserunt error perspiciatis iusto quos dolores temporibus maxime distinctio non! Nihil quo aliquam atque excepturi
+      officia!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum corporis quaerat maxime amet. Rem impedit
+      reprehenderit cupiditate, ullam deleniti tempora assumenda. Distinctio temporibus at molestias consectetur,
+      recusandae quas laudantium provident?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit voluptate tempore blanditiis commodi quam
+      non dolor iste iure, culpa atque architecto, consequuntur reiciendis nisi corporis assumenda. Harum optio minima
+      maiores.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum atque totam corrupti voluptatum reprehenderit
+      amet neque molestiae animi possimus error aperiam fuga esse itaque magni, facilis ipsam. Repellendus, minima eos?
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem beatae quasi quia reprehenderit aliquam veniam
+      ducimus possimus necessitatibus perferendis. Nam perspiciatis quos optio dicta. Iste reiciendis consectetur
+      laudantium voluptate magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates error aliquid possimus illum quo soluta.
+      Consequatur culpa animi nemo, modi magnam accusantium, aperiam ex earum, placeat aliquid quibusdam a. Molestiae.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt aperiam necessitatibus est veniam eum
+      aspernatur debitis ut porro ratione eos minima, et vitae, impedit quibusdam suscipit reprehenderit possimus optio
+      ullam.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto, neque aut corporis sit repellat quo odit
+      nisi doloribus expedita tenetur vitae velit aperiam culpa consectetur reiciendis, unde tempora magni ad! Lorem
+      ipsum, dolor sit amet consectetur adipisicing elit. Asperiores deleniti nostrum commodi voluptates eveniet neque
+      in, officiis quaerat illum fugiat eligendi cupiditate error fuga eos, inventore quibusdam magni consequatur.
+      Dolores? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia aperiam ipsum quibusdam consectetur
+      recusandae, dicta, veniam enim eius accusamus quos pariatur doloribus labore cum repudiandae praesentium non natus
+      incidunt aspernatur.</p>
+  </div>
+
+  <ul>
+    <li>Lorem ipsum dolor sit amet.</li>
+    <li>Reiciendis architecto molestias repellendus fuga.</li>
+    <li>Iure aspernatur pariatur illo fuga.</li>
+    <li>Inventore non quos assumenda ab!</li>
+    <li>Hic et eligendi maiores? Corrupti!</li>
+    <li>Blanditiis earum consequuntur minima alias.</li>
+    <li>Voluptas enim itaque accusamus quidem.</li>
+    <li>Corrupti voluptatem quia vel omnis.</li>
+    <li>Ut deserunt ipsa doloremque sit.</li>
+    <li>Maiores provident error autem eaque.</li>
+    <li>Ipsam aperiam facere qui fugit.</li>
+    <li>Cumque accusamus voluptas alias ad.</li>
+    <li>Alias natus ipsa vel vero?</li>
+    <li>Nemo quisquam distinctio labore repudiandae?</li>
+    <li>Laudantium corrupti neque cumque error!</li>
+  </ul>
+
+  <div>
+    <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, minima?</span>
+  </div>
+
+  <h1>Lorem ipsum dolor sit amet.</h1>
+  <h2>Lorem ipsum dolor sit amet.</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto incidunt maxime doloribus odit maiores
+    corporis libero temporibus, tempora culpa, pariatur alias iste sed unde quasi ut magni rerum numquam eaque!</p>
+  <h2>Hic aliquam esse officiis magnam?</h2>
+  <p>Id, ullam non! Praesentium ducimus commodi iure temporibus nihil quae earum! Blanditiis quidem illo minima
+    explicabo, sint provident facere assumenda autem nostrum voluptates, tempore tenetur natus voluptatum atque. A,
+    quidem.</p>
+  <h2>Voluptates incidunt ipsum nulla sint.</h2>
+  <p>Quasi, aperiam asperiores exercitationem est doloribus incidunt totam perferendis reiciendis ullam et delectus ab.
+    Praesentium voluptatum dicta asperiores, a sit, repellat veniam esse reprehenderit facere odio autem nisi vitae ab.
+  </p>
+
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing.</h1>
+  <h2>Excepturi et impedit nihil cumque?</h2>
+  <p>Perspiciatis, quas! Dolorem, praesentium. Tempora distinctio dolorem magni numquam pariatur a voluptatibus
+    nesciunt, recusandae veniam quaerat nulla quis commodi consequuntur cum culpa ea neque, odit aliquam facere. Eum,
+    fuga earum!</p>
+  <h2>Assumenda impedit modi fuga aspernatur.</h2>
+  <p>Modi et magni aut est ut velit nisi perferendis, quo expedita sunt officiis reprehenderit illum provident tempora.
+    Quisquam animi quasi sapiente quos harum, eius dignissimos aliquid nemo. Corporis, error ad.</p>
+  <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste doloremque dolores accusantium est laudantium saepe
+    voluptatibus id et. Incidunt, dolore perspiciatis expedita in libero nemo iusto rerum unde ipsum corporis natus,
+    possimus sit dolores numquam, aut tenetur explicabo voluptatem maxime iure inventore minima itaque saepe?
+    Consequatur asperiores amet explicabo autem?</p>
 </body>
 
 </html>
