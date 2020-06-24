@@ -1,0 +1,94 @@
+@import "_globals";
+@import "reset";
+
+.square {
+    width: $square-size;
+    height: $square-size;
+}
+
+.rect {
+    width: $square-size;
+    height: $square-size;
+}
+
+.flexed-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-right-box {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.letter-border {
+    border-width: $thin-border-width;
+    border-style: $letter-border-style;
+}
+
+.box-border {
+    border-width: $fat-border-width;
+    border-style: $box-border-style;
+}
+
+.box-label {
+    font: {
+        size: 60px;
+        weight: bold;
+        family: Georgia, 'Times New Roman', Times, serif;
+    }
+    border-color: red;
+    width: 70%;
+    text-align: center;
+
+    margin: 0;
+}
+
+.outer {
+    border-color: darksalmon;
+    position: relative;
+
+    width: 80%;
+    margin: 0 auto;
+}
+
+div {
+    .a {
+        border-color: $a-border-color;
+        background-color: blanchedalmond;
+    }
+    
+    .b {
+        border-color: $b-border-color;
+        background-color: burlywood;
+    }
+    
+    .c {
+        border-color: $c-border-color;
+        background-color: darkorange;
+    }
+}
+
+@mixin message-text {
+    color: cornflowerblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@mixin panel($brd-color: red, $bck-color: red) {
+    border: 1px solid $brd-color;
+    background-color: $bck-color;
+}
+
+.message-panel {
+    @include message-text;
+    @include panel(blue, cornsilk);
+}
+
+.error-panel {
+    @include message-text;
+    @include panel;
+}
+

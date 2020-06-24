@@ -1,0 +1,26 @@
+{
+  "name": "html-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "sass ./src/styles/main.scss ./dist/styles/main.css",
+    "copy": "cpy ./src/css/css-demo.html ./dist/css/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vs192ef34/html-basics.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vs192ef34/html-basics/issues"
+  },
+  "homepage": "https://github.com/vs192ef34/html-basics#readme",
+  "devDependencies": {
+    "copyfiles": "^2.3.0",
+    "cpy-cli": "^3.1.1",
+    "sass": "^1.26.9"
+  }
+}
