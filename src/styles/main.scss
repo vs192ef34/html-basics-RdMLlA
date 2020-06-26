@@ -54,23 +54,6 @@
     margin: 0 auto;
 }
 
-div {
-    .a {
-        border-color: $a-border-color;
-        background-color: blanchedalmond;
-    }
-    
-    .b {
-        border-color: $b-border-color;
-        background-color: burlywood;
-    }
-    
-    .c {
-        border-color: $c-border-color;
-        background-color: darkorange;
-    }
-}
-
 @mixin message-text {
     color: cornflowerblue;
     font-size: 20px;
@@ -82,6 +65,11 @@ div {
     background-color: $bck-color;
 }
 
+@mixin letter-box($brd-color, $bck-color) {
+    border-color: $brd-color;
+    background-color: $bck-color;
+} 
+
 .message-panel {
     @include message-text;
     @include panel(blue, cornsilk);
@@ -92,3 +80,34 @@ div {
     @include panel;
 }
 
+div {
+    .a {
+        @include letter-box($a-border-color, blanchedalmond)
+    }
+    
+    .b {
+        @include letter-box($b-border-color, burlywood)
+    }
+    
+    .c {
+        @include letter-box($c-border-color, darkorange)
+    }
+}
+
+.button-basic {
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button-report {
+    @extend .button-basic;
+    background-color: red;
+}
+
+.button-submit {
+    @extend .button-basic;
+    background-color: green;
+    color: white;
+}
